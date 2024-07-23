@@ -4,7 +4,15 @@ body {
   display: flex;
   flex-direction: column;
 }
-header {
+
+.header1, .topnav {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header1 {
+  top:0;
   background-color: black;
   color: #fff;
   text-align: center;
@@ -47,6 +55,7 @@ header {
   float: right;
   display: flex;
   align-items: center;
+  padding-right:10px;
 
 }
 
@@ -55,7 +64,9 @@ header {
 }
 
 .topnav {
+  top:22px;
   margin:0;
+  margin-bottom:5px;
   background-color: #fff;
   padding: 8px;
   font-size: 12px;
@@ -75,6 +86,7 @@ header {
 main {
   text-align: center;
   margin-bottom: 30px;
+  padding-top:40px;
 }
 
 .slideshow-container {
