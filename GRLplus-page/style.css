@@ -121,18 +121,78 @@ body {
 }
 
 /* Product Section */
-
-
-.product-section{
-  padding-left: 100px;
-  width: 50%;
-  height:50%;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top:50px;
+.product-section {
+  padding-top: 100px; /* ヘッダーの高さに応じて調整 */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-  
+
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.product-images {
+  width: 50%;
+  align-items: center;
+}
+
+.slideshow-container {
+  width: 100%;
+  max-width: 400px; /* スライドの最大幅を制限 */
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.product1-content {
+  width: 45%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 ul{
   margin:10px 0px;
   list-style: none;
@@ -185,130 +245,48 @@ button{
   background-color: #555;
 }
 
-
-
-/* Flexbox container to align the slideshow and product content side by side */
-
-
-.slideshow-container {
-  flex: 1;
-  max-width: 50%;
-}
-
-.product1-content {
-  flex: 1;
-  max-width: 45%;
-  padding-left: 400px;
-  width: 48%;
-  display: flow;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom:40px;
-  margin-top:0;
-  
-}
-
-.mySlides {
-  display: none;
-}
-
-.fade {
-  animation: fade 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
 /* Styles for dot navigation */
+.dot-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  cursor: pointer;
 }
 
-.active {
+.active, .dot:hover {
   background-color: #717171;
 }
 
-/* Position dot navigation */
-.product-section .slideshow-container {
-  position: relative;
-}
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  .product-section {
+    padding: 80px 20px 0;
+  }
 
-.product-section .slideshow-container .prev,
-.product-section .slideshow-container .next {
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
+  .product-container {
+    flex-direction: column;
+  }
 
-.product-section .slideshow-container .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+  .product-images,
+  .product1-content {
+    width: 100%;
+  }
 
-.product-section .slideshow-container .prev:hover, .product-section .slideshow-container .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
+  .product1-content {
+    padding-left: 0;
+    margin-top: 20px;
+  }
 
-/* Styles for dot navigation */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  .slideshow-container {
+    max-width: 100%;
+  }
 }
-
-
-.active {
-  background-color: #717171;
-}
-
-/* Position dot navigation */
-.product-section .slideshow-container {
-  position: relative;
-}
-
-.product-section .slideshow-container .prev,
-.product-section .slideshow-container .next {
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(182, 177, 177);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.product-section .slideshow-container .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.product-section .slideshow-container .prev:hover, .product-section .slideshow-container .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);}

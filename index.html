@@ -1,260 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GRLplus</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tulle Black Ribbon Tunic</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+</head>
+<body>
 
-    <div class="header1">FREE Shipping on all orders $100 +(CAD Domestic only)</div>
+  <div class="header1">FREE Shipping on all orders $100 +(CAD Domestic only)</div>
+  <div class="topnav">
+    <div class="topnav-left">
+      <a href="https://grlplus.vercel.app/" target="_blank"
+        ><img src="GRLplus Logo.png" alt="Logo" width="60" height="16"
+      /></a>
+    </div>
 
-    <div class="topnav">
-      <div class="topnav-left">
-        <a href="https://grlplus.vercel.app/" target="_blank"
-          ><img src="GRLplus Logo.png" alt="Logo" width="60" height="16"
-        /></a>
+
+    <!-- ドロップダウンメニューの追加 -->
+
+    <div class="dropdown">
+      <a href="#" class="dropbtn">FEATURED</a>
+      <div class="dropdown-content">
+        <a href="#">New Arrivals</a>
+        <a href="#">Bset Sellers</a>
+        <a href="#">Exclusives</a>
       </div>
+    </div>
 
+    <div class="dropdown">
+      <a href="#" class="dropbtn" onclick="toggleDropdown()">CATEGORY</a>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">All</a>
+        <a href="#">Tops</a>
+        <a href="#">Bottoms</a>
+        <a href="#">Dresses</a>
+        <a href="#">Outerwear</a>
+        <a href="#">Accessories</a>
+      </div>
+    </div>
 
-      <!-- ドロップダウンメニューの追加 -->
+    <div class="dropdown">
+      <a href="#" class="dropbtn">LOOK BOOK</a>
+      <div class="dropdown-content">
+        <a href="#">Spring/Summer 2024</a>
+        <a href="#">Fall/Winter 2023</a>
+      </div>
+    </div>
   
-      <div class="dropdown">
-        <a href="#" class="dropbtn">FEATURED</a>
-        <div class="dropdown-content">
-          <a href="#">New Arrivals</a>
-          <a href="#">Bset Sellers</a>
-          <a href="#">Exclusives</a>
-        </div>
+    <div class="dropdown">
+      <a href="#" class="dropbtn">COLLABORATIONS</a>
+      <div class="dropdown-content">
+        <a href="#">New Balance X GRLplus </a>
+        <a href="#">Asics X GRLplus</a>
       </div>
-
-      <div class="dropdown">
-        <a href="#" class="dropbtn" onclick="toggleDropdown()">CATEGORY</a>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">All</a>
-          <a href="#">Tops</a>
-          <a href="#">Bottoms</a>
-          <a href="#">Dresses</a>
-          <a href="#">Outerwear</a>
-          <a href="#">Accessories</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-        <a href="#" class="dropbtn">LOOK BOOK</a>
-        <div class="dropdown-content">
-          <a href="#">Spring/Summer 2024</a>
-          <a href="#">Fall/Winter 2023</a>
-        </div>
-      </div>
-    
-      <div class="dropdown">
-        <a href="#" class="dropbtn">COLLABORATIONS</a>
-        <div class="dropdown-content">
-          <a href="#">New Balance X GRLplus </a>
-          <a href="#">Asics X GRLplus</a>
-        </div>
-      </div>
-    
+    </div>
+  
 <!-- サーチボックスの追加 -->
 <div class="topnav-right">
-  <div class="search-container">
-    <form action="/search" method="get">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit"><img src="Search Icon.png" alt="Search" width="16" height="16"></button>
-    </form>
-  </div>
-  <a href="#" target="_blank"
-    ><img src="Log in Icon.png" alt="menu icon" width="16" height="16"
-  /></a>
-  <a href="#" target="_blank"
-    ><img
-      src="Shopping bag icon.png"
-      alt="menu icon"
-      width="16"
-      height="16"
-  /></a>
-  
+<div class="search-container">
+  <form action="/search" method="get">
+    <input type="text" placeholder="Search.." name="search">
+    <button type="submit"><img src="Search Icon.png" alt="Search" width="16" height="16"></button>
+  </form>
+</div>
+<a href="#" target="_blank"
+  ><img src="Log in Icon.png" alt="menu icon" width="16" height="16"
+/></a>
+<a href="#" target="_blank"
+  ><img
+    src="Shopping bag icon.png"
+    alt="menu icon"
+    width="16"
+    height="16"
+/></a>
 
 
-      
-      </div>
-    </div>
 
-
-    <main>
     
-  
-
-    <div class="slideshow-container">
-
-      <div class="mySlides fade">
-          <img src="Main Image1.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides fade">
-          <img src="Main Image2.jpg" style="width:100%">
-      </div>
-<!-- 次へ/前へ ボタン -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-<br>
-
-  <!-- 各スライドのドットインジケーター -->
-  <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      
-  </div>
-
-  <script src="scripts.js"></script>
-
-
-</main>
-
-
-    <section class="products">
-      <h1>New Arrivals</h1>
-      <ul>
-        <li>
-          <a href="https://grlplus.vercel.app/GRLplus-page/product1.html">
-          <img src="Tulle Back Ribbon Tunic.jpg" alt="Product1" width="150" />
-          <h2>Tulle Black Ribbon Tunic</h2>
-          <p>$120</p>
-        </a>
-        
-        </li>
-        <li>
-          <img
-            src="High waist straight denim pants.jpg"
-            alt="Product2"
-            width="150"
-          />
-          <h2>High waist straight denim pants</h2>
-          <p>$150</p>
-        </li>
-        <li>
-          <img
-            src="Shoulder Ribbon Knit Bische.jpg"
-            alt="Product3"
-            width="150"
-          />
-          <h2>Shoulder Ribbon Knit Bische</h2>
-          <p>$100</p>
-        </li>
-        <li>
-          <img src="Wide All-In-One.jpg" alt="Product4" width="150" />
-          <h2>Wide All-In-One</h2>
-          <p>$185</p>
-        </li>
-        <li>
-          <img src="Big Ribbon Paper Hat.jpg" alt="Product4" width="150" />
-          <h2>Big Ribbon Paper Hat</h2>
-          <p>$85</p>
-        </li>
-        <li>
-          <img
-            src="Neck No Sleeves Onepies.jpg"
-            alt="Product4"
-            width="150"
-          />
-          <h2>Neck No Sleeves Onepiece</h2>
-          <p>$175</p>
-        </li>
-        <li>
-          <img src="Tulle Flare Skirt.jpg" alt="Product4" width="150" />
-          <h2>Tulle Flare Skirt</h2>
-          <p>$160</p>
-        </li>
-        <li>
-          <img src="Croissant sholder bag.jpg" alt="Product4" width="150" />
-          <h2>Croissant shoulder bag</h2>
-          <p>$150</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="about">
-      <div class="about-image">
-        <img src="About GRL plus Pic.jpg" alt="ABOUT">
-      </div>
-      <div class="about-content">
-        <h3>About</h3>
-        <h4>GRLplus</h4>
-        <p>
-          A global brand recognized for its distinctive blend of street culture
-          and elegance, this Japanese fashion house that offers a curated
-          selection of luxury petite clothing, including dresses, tops, bottoms,
-          and shoes. With meticulous attention to detail, each design aims to
-          enhance the beauty of a woman's silhouette.
-        </p>
-      </div>
-    </section>
-    <div class="clearfix"></div>
-    <footer>
-      <div class="footer-left">
-        <section>
-          <ul>
-            <li>
-              <h5>ABOUT US</h5>
-              <p>Store Locations</p>
-              <p>Press</p>
-              <p>Privacy</p>
-              <p>Terms and Conditions</p>
-            </li>
-            <li>
-              <h5>INFO</h5>
-              <p>Refund & Exchange</p>
-              <p>Policy</p>
-              <p>FAQs</p>
-              <p>Contact Us</p>
-              <p>Inquiries</p>
-            </li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="footer-right">
-        <section>
-          <h6>NEWSLETTER</h6>
-          <div class="frcontainer">
-            <input
-              type="text"
-              placeholder="Email address"
-              name="mail"
-              required
-            />
-          </div>
-
-          <a href="#" target="_blank"
-            ><img
-              src="Instagram Icon.png"
-              alt="menu icon"
-              width="24"
-              height="24"
-          /></a>
-          <a href="#" target="_blank"
-            ><img
-              src="Facebook Icon.png"
-              alt="menu icon"
-              width="24"
-              height="24"
-          /></a>
-          <a href="#" target="_blank"
-            ><img
-              src="Twitter Icon.png"
-              alt="menu icon"
-              width="24"
-              height="24"
-          /></a>
-        </section>
-      </div>
-    </footer>
-
-    <div class="right-reserved">
-      <small>Copyright ⓒ2024, GRL plus. All rights reserved </small>
     </div>
-  </body>
+  </div>
+
+
+
+<!-- Product Section -->
+<section class="product-section">
+  <div class="product-container">
+    <div class="product-images">
+      <div class="slideshow-container">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <div class="mySlides fade">
+          <img src="Tulle Back Ribbon Tunic.jpg" alt="Tulle Back Ribbon Tunic">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="tulle3.jpg" alt="Tulle 3">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="tulle4.jpg" alt="Tulle 4">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="tulle2.jpg" alt="Tulle 2">
+        </div>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </div>
+
+    <div class="product1-content">
+      <h1>Tulle Black Ribbon Tunic</h1>
+      <p>$120</p>
+      <p1>A tunic with double-layered tulle that creates a romantic volume. The back ribbon adds a striking detail to the back view and prevents the sleeves from slipping off the shoulders. The wide shirring at the waist is effective for a slimming effect. The gently flared peplum skillfully covers the lower abdomen and hips.</p1>
+      <ul>
+        <li>★ Stretchable fabric </li>
+        <li>★ Elastic waistband </li>
+        <li>★ Due to the sheer material, please wear a camisole or similar underneath</li>
+      </ul>
+      <h2>size</h2>
+      <div class="product1-button">
+        <button>XS</button>
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+      </div>
+      <h2>color</h2>
+      <div class="product1-colorbutton">
+        <button>white</button>
+        <button>chacorl</button>
+        <button>grey</button>
+      </div>
+      <h2>quantity</h2>
+      <label><select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+      </select></label>
+      <div class="product1-add-to-bag">
+        <button class="add-to-bag" onclick="addToBag()">Add to Bag</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="scripts.js"></script>
+    
+</body>
 </html>
